@@ -416,9 +416,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TJAPlayer3\TJAPlayer3.csproj">
+    <ProjectReference Include="..\TJAPlayer3\RainDon.csproj">
       <Project>{81BEC512-8074-4BD1-8A3C-AC73BC7BF846}</Project>
-      <Name>TJAPlayer3</Name>
+      <Name>RainDon</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
