@@ -81,11 +81,11 @@ namespace TJAPlayer3
 			{
 				if (base.b初めての進行描画)
 				{
-					this.list進行文字列.Add(TJAPlayer3.AppDisplayNameWithInformationalVersion);
+					this.list進行文字列.Add("RainDon v1.0.0");
 					this.list進行文字列.Add("");
 					this.list進行文字列.Add("This is a fork of twopointzero/TJAPlayer3.");
 					this.list進行文字列.Add("");
-					this.list進行文字列.Add($"{TJAPlayer3.AppDisplayName} is open source software under the MIT license.");
+					this.list進行文字列.Add($"RainDon is open source software under the MIT license.");
 					this.list進行文字列.Add("See README for acknowledgments.");
 					this.list進行文字列.Add("");
 

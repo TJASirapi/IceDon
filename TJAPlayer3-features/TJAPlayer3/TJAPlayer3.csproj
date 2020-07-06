@@ -9,10 +9,10 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TJAPlayer3</RootNamespace>
-    <AssemblyName>TJAPlayer3</AssemblyName>
+    <AssemblyName>RainDon</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ApplicationIcon>Resources\TJAPlayer3.ico</ApplicationIcon>
+    <ApplicationIcon>ca4a681d9c7ecd8b08c48df0e882ab27_xxo.ico</ApplicationIcon>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <SignAssembly>false</SignAssembly>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
@@ -340,7 +340,10 @@
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ca4a681d9c7ecd8b08c48df0e882ab27_xxo.ico" />
+    <Content Include="Resources\ca4a681d9c7ecd8b08c48df0e882ab27_xxo.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
