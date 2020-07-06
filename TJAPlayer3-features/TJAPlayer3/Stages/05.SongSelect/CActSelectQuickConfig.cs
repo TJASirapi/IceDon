@@ -81,12 +81,11 @@ namespace TJAPlayer3
                 "ゲームモード\n" +
                 "TYPE-A: 完走!叩ききりまショー!\n" +
                 "TYPE-B: 完走!叩ききりまショー!(激辛)\n" +
-				"TYPE-C: 特訓モード\n" +
                 " \n",
                 " \n" +
                 " \n" +
                 " ",
-                new string[] { "OFF", "完走!", "完走!激辛", "特訓モード" }) );
+                new string[] { "OFF", "完走!", "完走!激辛" }) );
             l.Add( new CItemList("ゲージモード", CItemBase.Eパネル種別.通常, (int)TJAPlayer3.ConfigIni.eGaugeMode,
                 "",
                 "",
@@ -142,7 +141,6 @@ namespace TJAPlayer3
                         case 0: game = EGame.OFF; break;
                         case 1: game = EGame.完走叩ききりまショー; break;
                         case 2: game = EGame.完走叩ききりまショー激辛; break;
-						case 3: game = EGame.特訓モード; break;
                     }
 					TJAPlayer3.ConfigIni.eGameMode = game;
 					break;
