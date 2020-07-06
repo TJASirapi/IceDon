@@ -118,21 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Info_IsAuto" xml:space="preserve">
-    <value>Auto</value>
+    <value>オートプレイ</value>
   </data>
   <data name="Stage_InGame" xml:space="preserve">
-    <value>Playing a song</value>
+    <value>曲を演奏中</value>
   </data>
   <data name="Stage_Result" xml:space="preserve">
-    <value>Result</value>
+    <value>結果発表ー！</value>
   </data>
   <data name="Stage_Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>設定</value>
   </data>
   <data name="Stage_SongSelect" xml:space="preserve">
-    <value>Selecting a song</value>
+    <value>曲を選んでいる最中</value>
   </data>
   <data name="Stage_StartUp" xml:space="preserve">
-    <value>Starting up...</value>
+    <value>起動中...</value>
   </data>
 </root>

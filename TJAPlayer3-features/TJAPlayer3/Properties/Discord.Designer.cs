@@ -61,7 +61,7 @@ namespace TJAPlayer3.Properties {
         }
         
         /// <summary>
-        ///   Auto に類似しているローカライズされた文字列を検索します。
+        ///   オートプレイ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Info_IsAuto {
             get {
@@ -70,7 +70,7 @@ namespace TJAPlayer3.Properties {
         }
         
         /// <summary>
-        ///   Playing a song に類似しているローカライズされた文字列を検索します。
+        ///   曲を演奏中 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Stage_InGame {
             get {
@@ -79,7 +79,7 @@ namespace TJAPlayer3.Properties {
         }
         
         /// <summary>
-        ///   Result に類似しているローカライズされた文字列を検索します。
+        ///   結果発表ー！ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Stage_Result {
             get {
@@ -88,7 +88,7 @@ namespace TJAPlayer3.Properties {
         }
         
         /// <summary>
-        ///   Settings に類似しているローカライズされた文字列を検索します。
+        ///   設定 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Stage_Settings {
             get {
@@ -97,7 +97,7 @@ namespace TJAPlayer3.Properties {
         }
         
         /// <summary>
-        ///   Selecting a song に類似しているローカライズされた文字列を検索します。
+        ///   曲を選んでいる最中 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Stage_SongSelect {
             get {
@@ -106,7 +106,7 @@ namespace TJAPlayer3.Properties {
         }
         
         /// <summary>
-        ///   Starting up... に類似しているローカライズされた文字列を検索します。
+        ///   起動中... に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Stage_StartUp {
             get {
