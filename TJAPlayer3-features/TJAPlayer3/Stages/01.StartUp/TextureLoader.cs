@@ -578,7 +578,6 @@ namespace TJAPlayer3
 
             TJAPlayer3.t安全にDisposeする(ref Bar);
             TJAPlayer3.t安全にDisposeする(ref Bar_Branch);
-            TJAPlayer3.t安全にDisposeする(ref Stage);
 
             #endregion
             #region キャラクター

@@ -193,8 +193,10 @@ namespace TJAPlayer3
                 {
                     this.ct進行用.n現在の値 = 300;
                 }
-                if( this.txGENRE != null )
-                    this.txGENRE.t2D描画(TJAPlayer3.app.Device, TJAPlayer3.Skin.Game_Genre_XY[0], TJAPlayer3.Skin.Game_Genre_XY[1] );
+
+                if ( this.txGENRE != null )
+                TJAPlayer3.Tx.Stage.t2D描画(TJAPlayer3.app.Device, TJAPlayer3.Skin.Game_Genre_XY[0], TJAPlayer3.Skin.Game_Genre_XY[1]);
+                this.txGENRE.t2D描画(TJAPlayer3.app.Device, TJAPlayer3.Skin.Game_Genre_XY[0], TJAPlayer3.Skin.Game_Genre_XY[1] );
 
                 if( TJAPlayer3.Skin.b現在のステージ数を表示しない )
                 {
