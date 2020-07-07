@@ -220,30 +220,30 @@ namespace TJAPlayer3
                 {
                     #region[ 透明度制御 ]
 
-                    if (ct進行用.n現在の値 < 745)
+                    //if (ct進行用.n現在の値 < 745)
                     {
                         bFirst = false;
                     }
 
                     var opacity = 255;
-                    if (ct進行用.n現在の値 < 745)
+                    //if (ct進行用.n現在の値 < 745)
                     {
                         opacity = 255;
                     }
-                    else if (ct進行用.n現在の値 >= 745 && ct進行用.n現在の値 < 1000)
+                    //else if (ct進行用.n現在の値 >= 745 && ct進行用.n現在の値 < 1000)
                     {
                         opacity = 255 - (ct進行用.n現在の値 - 745);
                     }
-                    else if (ct進行用.n現在の値 >= 1000 && ct進行用.n現在の値 <= 1745)
+                    //else if (ct進行用.n現在の値 >= 1000 && ct進行用.n現在の値 <= 1745)
                     {
                         opacity = 0;
                     }
-                    else if (ct進行用.n現在の値 >= 1745)
+                    //else if (ct進行用.n現在の値 >= 1745)
                     {
                         opacity = ct進行用.n現在の値 - 1745;
                     }
 
-                    if (txMusicName != null)
+                    //if (txMusicName != null)
                     {
                         txMusicName.Opacity = opacity;
                     }
@@ -253,7 +253,7 @@ namespace TJAPlayer3
                         txGENRE.Opacity = opacity;
                     }
 
-                    if (tx難易度とステージ数 != null)
+                    //if (tx難易度とステージ数 != null)
                     {
                         tx難易度とステージ数.Opacity = 255 - opacity;
                     }
