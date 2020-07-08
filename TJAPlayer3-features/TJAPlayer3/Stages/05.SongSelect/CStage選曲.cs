@@ -8,64 +8,64 @@ using FDK;
 
 namespace TJAPlayer3
 {
-	internal class CStage選曲 : CStage
-	{
-		// プロパティ
-		public int nスクロールバー相対y座標
-		{
-			get
-			{
-				if (act曲リスト != null)
-				{
-					return act曲リスト.nスクロールバー相対y座標;
-				}
-				else
-				{
-					return 0;
-				}
-			}
-		}
-		public bool bIsEnumeratingSongs
-		{
-			get
-			{
-				return act曲リスト.bIsEnumeratingSongs;
-			}
-			set
-			{
-				act曲リスト.bIsEnumeratingSongs = value;
-			}
-		}
-		public bool bIsPlayingPremovie
-		{
-			get
-			{
-				return this.actPreimageパネル.bIsPlayingPremovie;
-			}
-		}
-		public bool bスクロール中
-		{
-			get
-			{
-				return this.act曲リスト.bスクロール中;
-			}
-		}
-		public int n確定された曲の難易度
-		{
-			get;
-			private set;
-		}
-		public string str確定された曲のジャンル
-		{
-			get;
-			private set;
-		}
+    internal class CStage選曲 : CStage
+    {
+        // プロパティ
+        public int nスクロールバー相対y座標
+        {
+            get
+            {
+                if (act曲リスト != null)
+                {
+                    return act曲リスト.nスクロールバー相対y座標;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+        }
+        public bool bIsEnumeratingSongs
+        {
+            get
+            {
+                return act曲リスト.bIsEnumeratingSongs;
+            }
+            set
+            {
+                act曲リスト.bIsEnumeratingSongs = value;
+            }
+        }
+        public bool bIsPlayingPremovie
+        {
+            get
+            {
+                return this.actPreimageパネル.bIsPlayingPremovie;
+            }
+        }
+        public bool bスクロール中
+        {
+            get
+            {
+                return this.act曲リスト.bスクロール中;
+            }
+        }
+        public int n確定された曲の難易度
+        {
+            get;
+            private set;
+        }
+        public string str確定された曲のジャンル
+        {
+            get;
+            private set;                
+        }
 		public Cスコア r確定されたスコア
 		{
 			get;
 			private set;
 		}
-		public C曲リストノード r確定された曲
+		public C曲リストノード r確定された曲 
 		{
 			get;
 			private set;
@@ -98,26 +98,26 @@ namespace TJAPlayer3
 			base.eステージID = CStage.Eステージ.選曲;
 			base.eフェーズID = CStage.Eフェーズ.共通_通常状態;
 			base.b活性化してない = true;
-			base.list子Activities.Add(this.actオプションパネル = new CActオプションパネル());
-			base.list子Activities.Add(this.actFIFO = new CActFIFOBlack());
-			base.list子Activities.Add(this.actFIfrom結果画面 = new CActFIFOBlack());
+			base.list子Activities.Add( this.actオプションパネル = new CActオプションパネル() );
+            base.list子Activities.Add( this.actFIFO = new CActFIFOBlack() );
+			base.list子Activities.Add( this.actFIfrom結果画面 = new CActFIFOBlack() );
 			//base.list子Activities.Add( this.actFOtoNowLoading = new CActFIFOBlack() );
-			base.list子Activities.Add(this.actFOtoNowLoading = new CActFIFOStart());
-			base.list子Activities.Add(this.act曲リスト = new CActSelect曲リスト());
-			base.list子Activities.Add(this.actステータスパネル = new CActSelectステータスパネル());
-			base.list子Activities.Add(this.act演奏履歴パネル = new CActSelect演奏履歴パネル());
-			base.list子Activities.Add(this.actPreimageパネル = new CActSelectPreimageパネル());
-			base.list子Activities.Add(this.actPresound = new CActSelectPresound());
-			base.list子Activities.Add(this.actInformation = new CActSelectInformation());
-			base.list子Activities.Add(this.actSortSongs = new CActSortSongs());
-			base.list子Activities.Add(this.actShowCurrentPosition = new CActSelectShowCurrentPosition());
-			base.list子Activities.Add(this.actQuickConfig = new CActSelectQuickConfig());
+            base.list子Activities.Add( this.actFOtoNowLoading = new CActFIFOStart() );
+			base.list子Activities.Add( this.act曲リスト = new CActSelect曲リスト() );
+			base.list子Activities.Add( this.actステータスパネル = new CActSelectステータスパネル() );
+			base.list子Activities.Add( this.act演奏履歴パネル = new CActSelect演奏履歴パネル() );
+			base.list子Activities.Add( this.actPreimageパネル = new CActSelectPreimageパネル() );
+			base.list子Activities.Add( this.actPresound = new CActSelectPresound() );
+			base.list子Activities.Add( this.actInformation = new CActSelectInformation() );
+			base.list子Activities.Add( this.actSortSongs = new CActSortSongs() );
+			base.list子Activities.Add( this.actShowCurrentPosition = new CActSelectShowCurrentPosition() );
+			base.list子Activities.Add( this.actQuickConfig = new CActSelectQuickConfig() );
 			//base.list子Activities.Add( this.act難易度選択画面 = new CActSelect難易度選択画面() );
 
-			this.CommandHistory = new CCommandHistory();        // #24063 2011.1.16 yyagi
+			this.CommandHistory = new CCommandHistory();		// #24063 2011.1.16 yyagi
 		}
-
-
+		
+		
 		// メソッド
 
 		public void t選択曲変更通知()
@@ -134,112 +134,109 @@ namespace TJAPlayer3
 		/// 曲リストをリセットする
 		/// </summary>
 		/// <param name="cs"></param>
-		public void Refresh(CSongs管理 cs, bool bRemakeSongTitleBar)
+		public void Refresh( CSongs管理 cs, bool bRemakeSongTitleBar)
 		{
-			this.act曲リスト.Refresh(cs, bRemakeSongTitleBar);
+			this.act曲リスト.Refresh( cs, bRemakeSongTitleBar );
 		}
 
 		public override void On活性化()
 		{
-			Trace.TraceInformation("選曲ステージを活性化します。");
+			Trace.TraceInformation( "選曲ステージを活性化します。" );
 			Trace.Indent();
 			try
 			{
-				this.eフェードアウト完了時の戻り値 = E戻り値.継続;
+                this.eフェードアウト完了時の戻り値 = E戻り値.継続;
 				this.bBGM再生済み = false;
-				for (int i = 0; i < 4; i++)
-					this.ctキー反復用[i] = new CCounter(0, 0, 0, TJAPlayer3.Timer);
+				for( int i = 0; i < 4; i++ )
+					this.ctキー反復用[ i ] = new CCounter( 0, 0, 0, TJAPlayer3.Timer );
 
-				//this.act難易度選択画面.bIsDifficltSelect = true;
+                //this.act難易度選択画面.bIsDifficltSelect = true;
 				base.On活性化();
 
-				this.actステータスパネル.t選択曲が変更された();  // 最大ランクを更新
-												// Discord Presenceの更新
-				Discord.UpdatePresence("", Properties.Discord.Stage_SongSelect, TJAPlayer3.StartupTime);
-			}
+				this.actステータスパネル.t選択曲が変更された();	// 最大ランクを更新
+                // Discord Presenceの更新
+                Discord.UpdatePresence("", Properties.Discord.Stage_SongSelect, TJAPlayer3.StartupTime);
+            }
 			finally
 			{
-				TJAPlayer3.ConfigIni.eScrollMode = EScrollMode.Normal;
-				TJAPlayer3.ConfigIni.bスクロールモードを上書き = false;
-				Trace.TraceInformation("選曲ステージの活性化を完了しました。");
+                TJAPlayer3.ConfigIni.eScrollMode = EScrollMode.Normal;
+                TJAPlayer3.ConfigIni.bスクロールモードを上書き = false;
+                Trace.TraceInformation( "選曲ステージの活性化を完了しました。" );
 				Trace.Unindent();
 			}
 		}
 		public override void On非活性化()
 		{
-			Trace.TraceInformation("選曲ステージを非活性化します。");
+			Trace.TraceInformation( "選曲ステージを非活性化します。" );
 			Trace.Indent();
 			try
 			{
-				for (int i = 0; i < 4; i++)
+				for( int i = 0; i < 4; i++ )
 				{
-					this.ctキー反復用[i] = null;
+					this.ctキー反復用[ i ] = null;
 				}
 				base.On非活性化();
 			}
 			finally
 			{
-				Trace.TraceInformation("選曲ステージの非活性化を完了しました。");
+				Trace.TraceInformation( "選曲ステージの非活性化を完了しました。" );
 				Trace.Unindent();
 			}
 		}
 		public override void OnManagedリソースの作成()
 		{
-			if (!base.b活性化してない)
+			if( !base.b活性化してない )
 			{
 				//this.tx背景 = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background.jpg" ), false );
 				//this.tx上部パネル = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_header_panel.png" ), false );
 				//this.tx下部パネル = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_footer panel.png" ) );
 
 				//this.txFLIP = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_skill number on gauge etc.png" ), false );
-				//this.tx難易度名 = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_difficulty name.png" ) );
-				//this.txジャンル別背景[0] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Anime.png" ) );
-				//this.txジャンル別背景[1] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_JPOP.png" ) );
-				//this.txジャンル別背景[2] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Game.png" ) );
-				//this.txジャンル別背景[3] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Namco.png" ) );
-				//this.txジャンル別背景[4] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Classic.png" ) );
-				//this.txジャンル別背景[5] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Child.png" ) );
-				//this.txジャンル別背景[6] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Variety.png" ) );
-				//this.txジャンル別背景[7] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_VOCALID.png" ) );
-				//this.txジャンル別背景[8] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Other.png" ) );
+                //this.tx難易度名 = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_difficulty name.png" ) );
+                //this.txジャンル別背景[0] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Anime.png" ) );
+                //this.txジャンル別背景[1] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_JPOP.png" ) );
+                //this.txジャンル別背景[2] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Game.png" ) );
+                //this.txジャンル別背景[3] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Namco.png" ) );
+                //this.txジャンル別背景[4] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Classic.png" ) );
+                //this.txジャンル別背景[5] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Child.png" ) );
+                //this.txジャンル別背景[6] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Variety.png" ) );
+                //this.txジャンル別背景[7] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_VOCALID.png" ) );
+                //this.txジャンル別背景[8] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Other.png" ) );
 
-				//this.tx難易度別背景[0] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Easy.png" ) );
-				//this.tx難易度別背景[1] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Normal.png" ) );
-				//this.tx難易度別背景[2] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Hard.png" ) );
-				//this.tx難易度別背景[3] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Master.png" ) );
-				//this.tx難易度別背景[4] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Edit.png" ) );
-				//this.tx下部テキスト = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_footer text.png" ) );
-				this.ct背景スクロール用タイマー = new CCounter(0, TJAPlayer3.Tx.SongSelect_Background.szテクスチャサイズ.Width, 30, TJAPlayer3.Timer);
+                //this.tx難易度別背景[0] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Easy.png" ) );
+                //this.tx難易度別背景[1] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Normal.png" ) );
+                //this.tx難易度別背景[2] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Hard.png" ) );
+                //this.tx難易度別背景[3] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Master.png" ) );
+                //this.tx難易度別背景[4] = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_background_Edit.png" ) );
+                //this.tx下部テキスト = CDTXMania.tテクスチャの生成( CSkin.Path( @"Graphics\5_footer text.png" ) );
+                this.ct背景スクロール用タイマー = new CCounter(0, TJAPlayer3.Tx.SongSelect_Background.szテクスチャサイズ.Width, 30, TJAPlayer3.Timer);
 				base.OnManagedリソースの作成();
 			}
 		}
 		public override void OnManagedリソースの解放()
 		{
-			if (!base.b活性化してない)
+			if( !base.b活性化してない )
 			{
 				//CDTXMania.tテクスチャの解放( ref this.tx背景 );
 				//CDTXMania.tテクスチャの解放( ref this.tx上部パネル );
 				//CDTXMania.tテクスチャの解放( ref this.tx下部パネル );
 				//CDTXMania.tテクスチャの解放( ref this.txFLIP );
-				//CDTXMania.tテクスチャの解放( ref this.tx難易度名 );
-				//CDTXMania.tテクスチャの解放( ref this.tx下部テキスト );
-				//for( int j = 0; j < 9; j++ )
-				//{
-				//    CDTXMania.tテクスチャの解放( ref this.txジャンル別背景[ j ] );
-				//}
-				//for( int j = 0; j < 5; j++ )
-				//{
-				//    CDTXMania.tテクスチャの解放( ref this.tx難易度別背景[ j ] );
-				//}
+                //CDTXMania.tテクスチャの解放( ref this.tx難易度名 );
+                //CDTXMania.tテクスチャの解放( ref this.tx下部テキスト );
+                //for( int j = 0; j < 9; j++ )
+                //{
+                //    CDTXMania.tテクスチャの解放( ref this.txジャンル別背景[ j ] );
+                //}
+                //for( int j = 0; j < 5; j++ )
+                //{
+                //    CDTXMania.tテクスチャの解放( ref this.tx難易度別背景[ j ] );
+                //}
 				base.OnManagedリソースの解放();
 			}
 		}
 		public override int On進行描画()
-			            
 		{
-			if (this.act難易度選択画面 != null)
-				TJAPlayer3.Tx.SongSelect_Gamen.t2D描画(TJAPlayer3.app.Device, TJAPlayer3.Skin.Game_Genre_XY[0], TJAPlayer3.Skin.Game_Genre_XY[1]);
-			if ( !base.b活性化してない )
+			if( !base.b活性化してない )
 			{
 			this.ct背景スクロール用タイマー.t進行Loop();
 				#region [ 初めての進行描画 ]
@@ -268,10 +265,8 @@ namespace TJAPlayer3
 			    if (TJAPlayer3.Tx.SongSelect_Background != null)
 			    {
 			        TJAPlayer3.Tx.SongSelect_Background.t2D描画(TJAPlayer3.app.Device, 0, 0);
-					TJAPlayer3.Tx.SongSelect_Gamen.t2D描画(TJAPlayer3.app.Device, 0, 0);
 
-
-					if (this.r現在選択中の曲 != null)
+			        if (this.r現在選択中の曲 != null)
 			        {
 			            var genreBack = TJAPlayer3.Tx.SongSelect_GenreBack[CStrジャンルtoNum.ForGenreBackIndex(this.r現在選択中の曲.strジャンル)];
 			            if (genreBack != null)
