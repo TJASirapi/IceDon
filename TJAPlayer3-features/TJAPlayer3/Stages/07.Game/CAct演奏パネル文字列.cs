@@ -93,9 +93,9 @@ namespace TJAPlayer3
 			    this.txGENRE?.Dispose();
                 var genreTextureFileName = CStrジャンルtoStr.ForTextureFileName( genreName );
 			    this.txGENRE = genreTextureFileName == null ? null : TJAPlayer3.Tx.TxCGen(genreTextureFileName);
-
+ 
 			    this.ct進行用 = new CCounter( 0, 2000, 2, TJAPlayer3.Timer );
-			}
+            }
 		}
 
         public void t歌詞テクスチャを生成する( string str歌詞 )
@@ -165,6 +165,7 @@ namespace TJAPlayer3
                 TJAPlayer3.t安全にDisposeする(ref pfMusicName);
                 TJAPlayer3.t安全にDisposeする(ref pf歌詞フォント);
                 TJAPlayer3.t安全にDisposeする(ref tx難易度とステージ数);
+                TJAPlayer3.t安全にDisposeする(ref TJAPlayer3.Tx.Stage);
                 base.OnManagedリソースの解放();
             }
         }
