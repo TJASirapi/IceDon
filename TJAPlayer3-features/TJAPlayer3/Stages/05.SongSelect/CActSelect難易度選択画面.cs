@@ -171,18 +171,19 @@ namespace TJAPlayer3
                 this.soundSelectAnnounce.tサウンドを再生する();
 				base.b初めての進行描画 = false;
 			}
-			//-----------------
-			#endregion
+            //-----------------
+            #endregion
 
-			// 本ステージは、(1)登場アニメフェーズ → (2)通常フェーズ　と二段階にわけて進む。
-			// ２つしかフェーズがないので CStage.eフェーズID を使ってないところがまた本末転倒。
+            // 本ステージは、(1)登場アニメフェーズ → (2)通常フェーズ　と二段階にわけて進む。
+            // ２つしかフェーズがないので CStage.eフェーズID を使ってないところがまた本末転倒。
 
-			
-			// 進行。
+
+            // 進行。
             //this.ct三角矢印アニメ.t進行Loop();
 
-            if( this.tx背景 != null )
-                this.tx背景.t2D描画( TJAPlayer3.app.Device, 0, 0 );
+            if (this.tx背景 != null)
+                TJAPlayer3.Tx.SongSelect_Gamen.t2D描画(TJAPlayer3.app.Device, 0, 0);
+				this.tx背景.t2D描画( TJAPlayer3.app.Device, 0, 0 );
 
 			if( !this.b登場アニメ全部完了 )
 			{
