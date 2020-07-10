@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="RainDon.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
-  <description asmv2:iconFile="ca4a681d9c7ecd8b08c48df0e882ab27_xxo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <asmv1:assemblyIdentity name="IceDon.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="TJAPlayer3a.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="RainDon" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
-    <commandLine file="RainDon.exe" parameters="" />
+    <assemblyIdentity name="IceDon" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="IceDon.exe" parameters="" />
   </entryPoint>
   <trustInfo>
     <security>
@@ -103,6 +103,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IceDon.exe" size="1401312">
+      <assemblyIdentity name="IceDon" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>U7DL2k9XbMmcTcNYeyHbYubH5ddfbScLlc8IjvCeFuE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="700336">
       <assemblyIdentity name="Newtonsoft.Json" version="12.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -111,18 +123,6 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>f5ErKKB8Im4L46z7L1fwUFOKugEA+h8L8sOfGh8dqBQ=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RainDon.exe" size="1166304">
-      <assemblyIdentity name="RainDon" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hnYneyJA1SBGOKdgmVn853gKuIzncMzy6/UX3RFkB7A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -234,16 +234,7 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="ca4a681d9c7ecd8b08c48df0e882ab27_xxo.ico" size="67646">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ms9MGW0hqG6ggwrJJw+I7fcIbBf5OQyNQyYjo4GDsGk=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="RainDon.exe.config" size="1452">
+  <file name="IceDon.exe.config" size="1452">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
@@ -259,6 +250,24 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>ms9MGW0hqG6ggwrJJw+I7fcIbBf5OQyNQyYjo4GDsGk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TJAPlayer3.ico" size="302430">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>t5XkU965ulrnk/Z2M9sUUbwEnBs40DMiH98SxQW8XXQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TJAPlayer3a.ico" size="302430">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>t5XkU965ulrnk/Z2M9sUUbwEnBs40DMiH98SxQW8XXQ=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

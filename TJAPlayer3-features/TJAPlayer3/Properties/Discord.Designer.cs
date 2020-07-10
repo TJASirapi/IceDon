@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RainDon.Properties {
+namespace IceDon.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace RainDon.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RainDon.Properties.Discord", typeof(Discord).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("IceDon.Properties.Discord", typeof(Discord).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -8,11 +8,11 @@
     <ProjectGuid>{81BEC512-8074-4BD1-8A3C-AC73BC7BF846}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RainDon</RootNamespace>
-    <AssemblyName>RainDon</AssemblyName>
+    <RootNamespace>IceDon</RootNamespace>
+    <AssemblyName>IceDon</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ApplicationIcon>ca4a681d9c7ecd8b08c48df0e882ab27_xxo.ico</ApplicationIcon>
+    <ApplicationIcon>TJAPlayer3a.ico</ApplicationIcon>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <SignAssembly>false</SignAssembly>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
@@ -360,8 +360,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ca4a681d9c7ecd8b08c48df0e882ab27_xxo.ico" />
     <Content Include="Resources\ca4a681d9c7ecd8b08c48df0e882ab27_xxo.ico" />
+    <Content Include="TJAPlayer3.ico" />
+    <Content Include="TJAPlayer3a.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
