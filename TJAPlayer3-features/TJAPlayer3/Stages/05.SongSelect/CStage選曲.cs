@@ -155,7 +155,7 @@ namespace TJAPlayer3
 
 				this.actステータスパネル.t選択曲が変更された();	// 最大ランクを更新
                 // Discord Presenceの更新
-                Discord.UpdatePresence("", Properties.Discord.Stage_SongSelect, TJAPlayer3.StartupTime);
+                Discord.UpdatePresence("", RainDon.Properties.Discord.Stage_SongSelect, TJAPlayer3.StartupTime);
             }
 			finally
 			{

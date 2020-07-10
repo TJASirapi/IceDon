@@ -385,7 +385,7 @@ namespace TJAPlayer3
 #endif
 					base.Window.ClientSize =
 						new Size(currentClientSize.Width, currentClientSize.Height);
-					base.Window.Icon = Properties.Resources.tjap3;
+					base.Window.Icon = RainDon.Properties.Resources.RainDon;
 					//					FDK.CTaskBar.ShowTaskBar( true );
 				}
 #if WindowedFullscreen
@@ -1551,7 +1551,7 @@ for (int i = 0; i < 3; i++) {
 			base.Window.FormBorderStyle = FormBorderStyle.Sizable;  // #23510 2010.10.27 yyagi: changed from FixedDialog to Sizable, to support window resize
 																	// #30666 2013.02.02 yyagi: moved the code to t全画面_ウインドウモード切り替え()
 			base.Window.ShowIcon = true;
-			base.Window.Icon = global::TJAPlayer3.Properties.Resources.tjap3;
+			base.Window.Icon = global::RainDon.Properties.Resources.RainDon;
 			base.Window.KeyDown += new KeyEventHandler(this.Window_KeyDown);
 			base.Window.MouseUp += new MouseEventHandler(this.Window_MouseUp);
 			base.Window.MouseDoubleClick += new MouseEventHandler(this.Window_MouseDoubleClick);    // #23510 2010.11.13 yyagi: to go fullscreen mode
@@ -1888,7 +1888,7 @@ for (int i = 0; i < 3; i++) {
 			#region Discordの処理
 			Discord.Initialize("428233983025741855");
 			StartupTime = Discord.GetUnixTime();
-			Discord.UpdatePresence("", Properties.Discord.Stage_StartUp, StartupTime);
+			Discord.UpdatePresence("", RainDon.Properties.Discord.Stage_StartUp, StartupTime);
 			#endregion
 
 

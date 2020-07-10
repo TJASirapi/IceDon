@@ -6,9 +6,9 @@ using System.Resources;
 // アセンブリに関連付けられている情報を変更するには、
 // これらの属性値を変更してください。
 [assembly: AssemblyTitle("RainDon")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("RainDon")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("RainDon")]
 [assembly: AssemblyProduct("RainDon")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
