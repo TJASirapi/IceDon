@@ -8,11 +8,11 @@
     <ProjectGuid>{81BEC512-8074-4BD1-8A3C-AC73BC7BF846}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TJAPlayer3</RootNamespace>
-    <AssemblyName>RainDon</AssemblyName>
+    <RootNamespace>IceDon</RootNamespace>
+    <AssemblyName>IceDon</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ApplicationIcon>ca4a681d9c7ecd8b08c48df0e882ab27_xxo.ico</ApplicationIcon>
+    <ApplicationIcon>TJAPlayer3a.ico</ApplicationIcon>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <SignAssembly>false</SignAssembly>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
@@ -38,6 +38,7 @@
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -68,8 +69,21 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup />
+  <PropertyGroup />
   <PropertyGroup>
-    <ApplicationManifest>TJAPlayer3.manifest</ApplicationManifest>
+    <ManifestCertificateThumbprint>DB5A7015CAF2F376279EC5C75C13971775258E07</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>RainDon_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bass.Net">
@@ -167,7 +181,7 @@
     </Compile>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="TJAPlayer3.manifest" />
+    <None Include="RainDon_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -307,6 +321,11 @@
     <None Include="Resources\TJAPlayer3.ico" />
   </ItemGroup>
   <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>
       <ProductName>.NET Framework Client Profile</ProductName>
@@ -341,8 +360,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ca4a681d9c7ecd8b08c48df0e882ab27_xxo.ico" />
     <Content Include="Resources\ca4a681d9c7ecd8b08c48df0e882ab27_xxo.ico" />
+    <Content Include="TJAPlayer3.ico" />
+    <Content Include="TJAPlayer3a.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

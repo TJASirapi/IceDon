@@ -81,7 +81,7 @@ namespace TJAPlayer3
 			{
 				if (base.b初めての進行描画)
 				{
-					this.list進行文字列.Add("RainDon v1.0.0");
+					this.list進行文字列.Add("IceDon v1.0.0");
 					this.list進行文字列.Add("");
 					this.list進行文字列.Add("This is a fork of twopointzero/TJAPlayer3.");
 					this.list進行文字列.Add("");

@@ -184,14 +184,14 @@ namespace TJAPlayer3
 					TJAPlayer3.Tx.Title_Background.t2D描画(TJAPlayer3.app.Device, 0, 0);
 
 				#region[ バージョン表示 ]
-				const string repositoryUrl = "https://github.com/TJASirapi/RainDon/";
+				const string repositoryUrl = "https://github.com/TJASirapi/IceDon/";
 #if DEBUG
 				TJAPlayer3.act文字コンソール.tPrint(4, 44, C文字コンソール.Eフォント種別.白, "");
 #endif
-				TJAPlayer3.act文字コンソール.tPrint(4, 4, C文字コンソール.Eフォント種別.白, $"RainDon v1.0.0 ({repositoryUrl};Fork of twopointzero/TJAPlayer3)");
+				TJAPlayer3.act文字コンソール.tPrint(4, 4, C文字コンソール.Eフォント種別.白, $"IceDon v1.0.0 ({repositoryUrl};Fork of twopointzero/TJAPlayer3)");
 				TJAPlayer3.act文字コンソール.tPrint(4, 24, C文字コンソール.Eフォント種別.白, "Skin:" + TJAPlayer3.Skin.Skin_Name + " Ver." + TJAPlayer3.Skin.Skin_Version + " (" + TJAPlayer3.Skin.Skin_Creator + ")");
 				//CDTXMania.act文字コンソール.tPrint(4, 24, C文字コンソール.Eフォント種別.白, strSubTitle);
-				TJAPlayer3.act文字コンソール.tPrint(4, (720 - 24), C文字コンソール.Eフォント種別.白, $"RainDon is open source software under the MIT license. See README for acknowledgments.");
+				TJAPlayer3.act文字コンソール.tPrint(4, (720 - 24), C文字コンソール.Eフォント種別.白, $"IceDon is open source software under the MIT license. See README for acknowledgments.");
 				#endregion
 
 

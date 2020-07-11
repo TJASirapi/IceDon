@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TJAPlayer3.Properties {
+namespace IceDon.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace TJAPlayer3.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TJAPlayer3.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("IceDon.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace TJAPlayer3.Properties {
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Icon tjap3 {
+        internal static System.Drawing.Icon RainDon {
             get {
-                object obj = ResourceManager.GetObject("tjap3", resourceCulture);
+                object obj = ResourceManager.GetObject("RainDon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
