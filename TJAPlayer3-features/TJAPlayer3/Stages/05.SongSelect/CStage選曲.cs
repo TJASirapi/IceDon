@@ -150,6 +150,8 @@ namespace TJAPlayer3
 				for( int i = 0; i < 4; i++ )
 					this.ctキー反復用[ i ] = new CCounter( 0, 0, 0, TJAPlayer3.Timer );
 
+				doncount = new CCounter(0, TJAPlayer3.Tx.SongSelDon.Length-1, 15, TJAPlayer3.Timer);
+
                 //this.act難易度選択画面.bIsDifficltSelect = true;
 				base.On活性化();
 
@@ -673,6 +675,10 @@ namespace TJAPlayer3
 						return (int) this.eフェードアウト完了時の戻り値;
 				}
 			}
+
+			if (TJAPlayer3.Tx.SongSelDon[doncount.n現在の値] != null) TJAPlayer3.Tx.SongSelDon[doncount.n現在の値].t2D描画(TJAPlayer3.app.Device, 10, 350);
+			doncount.t進行Loop();
+
 			return 0;
 		}
 		public enum E戻り値 : int
@@ -684,9 +690,11 @@ namespace TJAPlayer3
 			コンフィグ呼び出し,
 			スキン変更
 		}
-		
+
 
 		// その他
+
+		private CCounter doncount;
 
 		#region [ private ]
 		//-----------------

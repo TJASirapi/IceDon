@@ -1,4 +1,5 @@
 using FDK;
+using System.Diagnostics;
 
 namespace TJAPlayer3
 {
@@ -41,6 +42,9 @@ namespace TJAPlayer3
         const string HIT = @"Hit\";
         const string ROLL = @"Roll\";
         const string SPLASH = @"Splash\";
+
+        const string AAA = @"aaa\";
+        const string FOLDER = @"folder\";
 
 
         public TextureLoader()
@@ -128,6 +132,18 @@ namespace TJAPlayer3
             }
             SongSelect_ScoreWindow_Text = TxC(SONGSELECT + @"ScoreWindow_Text.png");
             SongSelect_Rating = TxC(SONGSELECT + @"Rating.png");
+
+            var a = TJAPlayer3.t連番画像の枚数を数える(CSkin.Path(BASE + AAA + FOLDER));
+            Trace.TraceInformation("" + BASE + AAA + FOLDER + "SONGSELECT DONS = " + a);
+            if (a != 0)
+            {
+                SongSelDon = new CTexture[a];
+                for (int i = 0; i < a; i++)
+                {
+                    SongSelDon[i] = TxC(AAA + FOLDER + i.ToString() + ".png");
+                }
+            }
+
             #endregion
 
             #region 4_読み込み画面
@@ -560,6 +576,7 @@ namespace TJAPlayer3
             TJAPlayer3.t安全にDisposeする(SongSelect_GenreBack);
             TJAPlayer3.t安全にDisposeする(ref SongSelect_ScoreWindow_Text);
             TJAPlayer3.t安全にDisposeする(ref SongSelect_Rating);
+            TJAPlayer3.t安全にDisposeする(SongSelDon);
             #endregion
 
             #region 4_読み込み画面
@@ -802,6 +819,8 @@ namespace TJAPlayer3
         public readonly CTexture[] SongSelect_ScoreWindow = new CTexture[(int)Difficulty.Total];
         public readonly CTexture[] SongSelect_Bar_Genre = new CTexture[9];
         public readonly CTexture[] SongSelect_Frame_Box = new CTexture[9];
+
+        public CTexture[] SongSelDon;
 
         #endregion
 
