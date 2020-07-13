@@ -219,21 +219,21 @@ namespace TJAPlayer3
             {
                 for( int i = 0; i < 256; i++ )
                 {
-                    if( this.stScore[ i ].b使用中 == false )
+                    //if( this.stScore[ i ].b使用中 == false )
                     {
-                        this.stScore[ i ].b使用中 = true;
-                        this.stScore[ i ].b表示中 = true;
-                        this.stScore[ i ].nAddScore = 10000;
-                        this.stScore[ i ].ctTimer = new CCounter( 0, 400, 1, TJAPlayer3.Timer );
-                        this.stScore[ i ].bBonusScore = true;
-                        this.stScore[ i ].nPlayer = player;
-                        this.n現在表示中のAddScore++;
+                        //this.stScore[ i ].b使用中 = true;
+                        //this.stScore[ i ].b表示中 = true;
+                        //this.stScore[ i ].nAddScore = 10000;
+                        //this.stScore[ i ].ctTimer = new CCounter( 0, 400, 1, TJAPlayer3.Timer );
+                        //this.stScore[ i ].bBonusScore = true;
+                        //this.stScore[ i ].nPlayer = player;
+                        //this.n現在表示中のAddScore++;
                         break;
                     }
                 }
             }
 
-            this.Set( E楽器パート.TAIKO, this.Get( E楽器パート.TAIKO, player ) + 10000, player );
+            //this.Set( E楽器パート.TAIKO, this.Get( E楽器パート.TAIKO, player ) + 10000, player );
         }
 
 		// CActivity 実装
