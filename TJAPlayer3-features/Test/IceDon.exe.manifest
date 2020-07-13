@@ -98,19 +98,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8wi/Y9oITR4z+ViBfHC4bksXc/5lk8gCZaanF2QhCfI=</dsig:DigestValue>
+        <dsig:DigestValue>T+VgN8KR5qSrFt7crPXn4N8cM5rBbCooP4s4vk7/pPc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IceDon.exe" size="2180064">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IceDon.exe" size="2180576">
       <assemblyIdentity name="IceDon" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JIcdX2ft04+kdjB8sMRX6rzC2tlUc4iHw/zFmm3dNSY=</dsig:DigestValue>
+        <dsig:DigestValue>QHSHCXn7QGE2Sq7jAZhy2CGd7hyh01YeLmV6m0sVe54=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -243,13 +243,13 @@
       <dsig:DigestValue>/9AcojQ8FzjI9hA/e2aU2SeE04l9GYf8V+/MbhesUDs=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="IceDon.exe.config" size="1452">
+  <file name="IceDon.exe.config" size="1481">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>7Vycx4ySeZZcbmwZC+T76FuWbzHAqbTmSU6HfHQKxAk=</dsig:DigestValue>
+      <dsig:DigestValue>G46ejYKjiFs4IWf6Pat1CEUn5dSlJS6+haZoSNK4unk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TJAPlayer3.ico" size="302430">
