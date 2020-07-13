@@ -98,7 +98,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>T+VgN8KR5qSrFt7crPXn4N8cM5rBbCooP4s4vk7/pPc=</dsig:DigestValue>
+        <dsig:DigestValue>8wi/Y9oITR4z+ViBfHC4bksXc/5lk8gCZaanF2QhCfI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QHSHCXn7QGE2Sq7jAZhy2CGd7hyh01YeLmV6m0sVe54=</dsig:DigestValue>
+        <dsig:DigestValue>/Bny4g9eRYMYCpjJM0Xgc4i4CxvWfDebm3M/husrGkc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -243,13 +243,13 @@
       <dsig:DigestValue>/9AcojQ8FzjI9hA/e2aU2SeE04l9GYf8V+/MbhesUDs=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="IceDon.exe.config" size="1481">
+  <file name="IceDon.exe.config" size="1452">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>G46ejYKjiFs4IWf6Pat1CEUn5dSlJS6+haZoSNK4unk=</dsig:DigestValue>
+      <dsig:DigestValue>7Vycx4ySeZZcbmwZC+T76FuWbzHAqbTmSU6HfHQKxAk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TJAPlayer3.ico" size="302430">
