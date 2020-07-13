@@ -12,7 +12,7 @@
     <AssemblyName>IceDon</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ApplicationIcon>TJAPlayer3a.ico</ApplicationIcon>
+    <ApplicationIcon>20200713063723906_easyicon_net_512.ico</ApplicationIcon>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <SignAssembly>false</SignAssembly>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
@@ -360,7 +360,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\ca4a681d9c7ecd8b08c48df0e882ab27_xxo.ico" />
+    <Content Include="20200713063723906_easyicon_net_512.ico" />
     <Content Include="TJAPlayer3.ico" />
     <Content Include="TJAPlayer3a.ico" />
   </ItemGroup>
