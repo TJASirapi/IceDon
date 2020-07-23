@@ -303,7 +303,7 @@ namespace TJAPlayer3
                         if( n描画順[ j ] % 2 == 0 && n描画順[ j ] != 0 )
                             bEven = true;
 
-                        this.tx踏み台[ n描画順[ j ] ].t2D描画( TJAPlayer3.app.Device, n踏み台座標[ j ], 720 - this.tx踏み台[ n描画順[ j ] ].szテクスチャサイズ.Height + ( bEven ? 35 : 0 ) );
+                        this.tx踏み台[ n描画順[ j ] ].t2D描画( TJAPlayer3.app.Device, n踏み台座標[ j ], 1080 - this.tx踏み台[ n描画順[ j ] ].szテクスチャサイズ.Height + ( bEven ? 35 : 0 ) );
                     }
 				}
 
@@ -314,7 +314,7 @@ namespace TJAPlayer3
             if( this.txヘッダー != null )
                 this.txヘッダー.t2D描画( TJAPlayer3.app.Device, 0, 0 );
             if( this.txフッター != null )
-                this.txフッター.t2D描画( TJAPlayer3.app.Device, 0, 720 - this.txフッター.sz画像サイズ.Height );
+                this.txフッター.t2D描画( TJAPlayer3.app.Device, 0, 1080 - this.txフッター.sz画像サイズ.Height );
 
             if( this.tx説明背景 != null )
                 this.tx説明背景.t2D描画( TJAPlayer3.app.Device, 340, 600 );

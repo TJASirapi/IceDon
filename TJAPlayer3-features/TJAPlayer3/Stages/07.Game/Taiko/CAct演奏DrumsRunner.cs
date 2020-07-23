@@ -44,7 +44,7 @@ namespace TJAPlayer3
                         {
                             stRunners[Index].nType = random.Next(1, Type + 1);
                         }
-                        stRunners[Index].ct進行 = new CCounter(0, 1280, TJAPlayer3.Skin.Game_Runner_Timer, TJAPlayer3.Timer);
+                        stRunners[Index].ct進行 = new CCounter(0, 1920, TJAPlayer3.Skin.Game_Runner_Timer, TJAPlayer3.Timer);
                         stRunners[Index].nOldValue = 0;
                         stRunners[Index].nNowPtn = 0;
                         stRunners[Index].fX = 0;
@@ -99,7 +99,7 @@ namespace TJAPlayer3
                 {
                     stRunners[i].nOldValue = stRunners[i].ct進行.n現在の値;
                     stRunners[i].ct進行.t進行();
-                    if (stRunners[i].ct進行.b終了値に達した || stRunners[i].fX > 1280)
+                    if (stRunners[i].ct進行.b終了値に達した || stRunners[i].fX > 1920)
                     {
                         stRunners[i].ct進行.t停止();
                         stRunners[i].b使用中 = false;
@@ -107,7 +107,7 @@ namespace TJAPlayer3
                     for (int n = stRunners[i].nOldValue; n < stRunners[i].ct進行.n現在の値; n++)
                     {
                         stRunners[i].fX += (float)TJAPlayer3.stage演奏ドラム画面.actPlayInfo.dbBPM / 18;
-                        int Width = 1280 / Ptn;
+                        int Width = 1920 / Ptn;
                         stRunners[i].nNowPtn = (int)stRunners[i].fX / Width;
                     }
                     if (TJAPlayer3.Tx.Runner != null)

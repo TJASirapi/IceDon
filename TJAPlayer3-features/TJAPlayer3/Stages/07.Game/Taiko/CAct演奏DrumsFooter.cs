@@ -16,7 +16,7 @@ namespace TJAPlayer3
         {
             if (TJAPlayer3.Tx.Mob_Footer != null)
             {
-                TJAPlayer3.Tx.Mob_Footer.t2D描画(TJAPlayer3.app.Device, 0, 720 - TJAPlayer3.Tx.Mob_Footer.szテクスチャサイズ.Height);
+                TJAPlayer3.Tx.Mob_Footer.t2D描画(TJAPlayer3.app.Device, 0, 1080 - TJAPlayer3.Tx.Mob_Footer.szテクスチャサイズ.Height);
             }
 
             return base.On進行描画();

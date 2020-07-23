@@ -67,14 +67,14 @@ namespace TJAPlayer3
                 if( this.mode == EFIFOモード.フェードアウト )
                 {
                     int y =  this.counter.n現在の値 >= 360 ? 360 : this.counter.n現在の値;
-                    TJAPlayer3.Tx.Result_FadeIn.t2D描画( TJAPlayer3.app.Device, 0, this.counter.n現在の値 >= 360 ? 0 : -360 + y, new Rectangle( 0, 0, 1280, 380 ) );
-                    TJAPlayer3.Tx.Result_FadeIn.t2D描画( TJAPlayer3.app.Device, 0, 720 - y, new Rectangle( 0, 380, 1280, 360 ) );
+                    TJAPlayer3.Tx.Result_FadeIn.t2D描画( TJAPlayer3.app.Device, 0, this.counter.n現在の値 >= 360 ? 0 : -360 + y, new Rectangle( 0, 0, 1920, 380 ) );
+                    TJAPlayer3.Tx.Result_FadeIn.t2D描画( TJAPlayer3.app.Device, 0, 1080 - y, new Rectangle( 0, 380, 1920, 360 ) );
                 }
                 else
                 {
                     TJAPlayer3.Tx.Result_FadeIn.Opacity = (((100 - this.counter.n現在の値) * 0xff) / 100);
-                    TJAPlayer3.Tx.Result_FadeIn.t2D描画( TJAPlayer3.app.Device, 0, 0, new Rectangle( 0, 0, 1280, 360 ) );
-                    TJAPlayer3.Tx.Result_FadeIn.t2D描画( TJAPlayer3.app.Device, 0, 360, new Rectangle( 0, 380, 1280, 360 ) );
+                    TJAPlayer3.Tx.Result_FadeIn.t2D描画( TJAPlayer3.app.Device, 0, 0, new Rectangle( 0, 0, 1920, 360 ) );
+                    TJAPlayer3.Tx.Result_FadeIn.t2D描画( TJAPlayer3.app.Device, 0, 360, new Rectangle( 0, 380, 1920, 360 ) );
                 }
 
 

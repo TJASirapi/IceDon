@@ -67,8 +67,8 @@ namespace TJAPlayer3
                     if (fAVIアスペクト比 < 1.77f)
                     {
                         //旧企画クリップだった場合
-                        this.ratio1 = 720f / ((float)this.frameheight);
-                        this.position = (int)((1280f - (this.framewidth * this.ratio1)) / 2f);
+                        this.ratio1 = 1080f / ((float)this.frameheight);
+                        this.position = (int)((1920f - (this.framewidth * this.ratio1)) / 2f);
                         int num = (int)(this.framewidth * this.ratio1);
                         if (num <= 565)
                         {
@@ -94,8 +94,8 @@ namespace TJAPlayer3
                     else
                     {
                         //ワイドクリップの処理
-                        this.ratio1 = 1280f / ((float)this.framewidth);
-                        this.position = (int)((720f - (this.frameheight * this.ratio1)) / 2f);
+                        this.ratio1 = 1920f / ((float)this.framewidth);
+                        this.position = (int)((1080f - (this.frameheight * this.ratio1)) / 2f);
                         this.i1 = (int)(this.framewidth * 0.23046875);
                         this.i2 = (int)(this.framewidth * 0.44140625);
                         this.rec = new Rectangle(0, 0, this.i1, (int)this.frameheight);
@@ -157,7 +157,7 @@ namespace TJAPlayer3
 						{
 							if ( chip.rAVI != null )
 							{
-								this.Start( chip.nチャンネル番号, chip.rAVI, chip.rDShow, 1280, 720, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, chip.n発声時刻ms );
+								this.Start( chip.nチャンネル番号, chip.rAVI, chip.rDShow, 1920, 1080, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, chip.n発声時刻ms );
 							}
 							continue;
 						}
@@ -264,7 +264,7 @@ namespace TJAPlayer3
 
                 //2014.11.17 kairera0467 フレーム幅をrAVIから参照していたため、先にローカル関数で決めるよう変更。
 				Size szフレーム幅 = new Size( nフレーム幅, nフレーム高さ );
-				Size sz最大フレーム幅 = new Size( 1280, 720 );
+				Size sz最大フレーム幅 = new Size(1920, 1080 );
 				Size size3 = new Size( this.n開始サイズW, this.n開始サイズH );
 				Size size4 = new Size( this.n終了サイズW, this.n終了サイズH );
 				Point location = new Point( this.n画像側開始位置X, this.n画像側終了位置Y );
@@ -521,8 +521,8 @@ namespace TJAPlayer3
                 TJAPlayer3.t安全にDisposeする( ref this.tx描画用 );
                 TJAPlayer3.t安全にDisposeする( ref this.tx窓描画用 );
 
-				this.tx描画用 = new CTexture( TJAPlayer3.app.Device, 1280, 720, TJAPlayer3.app.GraphicsDeviceManager.CurrentSettings.BackBufferFormat, Pool.Managed );
-				this.tx窓描画用 = new CTexture( TJAPlayer3.app.Device, 1280, 720, TJAPlayer3.app.GraphicsDeviceManager.CurrentSettings.BackBufferFormat, Pool.Managed );
+				this.tx描画用 = new CTexture( TJAPlayer3.app.Device, 1920, 1080, TJAPlayer3.app.GraphicsDeviceManager.CurrentSettings.BackBufferFormat, Pool.Managed );
+				this.tx窓描画用 = new CTexture( TJAPlayer3.app.Device, 1920, 1080, TJAPlayer3.app.GraphicsDeviceManager.CurrentSettings.BackBufferFormat, Pool.Managed );
             }
             
         }
@@ -545,8 +545,8 @@ namespace TJAPlayer3
 #if TEST_Direct3D9Ex
 				this.tx描画用 = new CTexture( CDTXMania.app.Device, 320, 355, CDTXMania.app.GraphicsDeviceManager.CurrentSettings.BackBufferFormat, Pool.Default, Usage.Dynamic );
 #else
-				this.tx描画用 = new CTexture( TJAPlayer3.app.Device, 1280, 720, TJAPlayer3.app.GraphicsDeviceManager.CurrentSettings.BackBufferFormat, Pool.Managed );
-				this.tx窓描画用 = new CTexture( TJAPlayer3.app.Device, 1280, 720, TJAPlayer3.app.GraphicsDeviceManager.CurrentSettings.BackBufferFormat, Pool.Managed );
+				this.tx描画用 = new CTexture( TJAPlayer3.app.Device, 1920, 1080, TJAPlayer3.app.GraphicsDeviceManager.CurrentSettings.BackBufferFormat, Pool.Managed );
+				this.tx窓描画用 = new CTexture( TJAPlayer3.app.Device, 1920, 1080, TJAPlayer3.app.GraphicsDeviceManager.CurrentSettings.BackBufferFormat, Pool.Managed );
 #endif
 				base.OnManagedリソースの作成();
 			}

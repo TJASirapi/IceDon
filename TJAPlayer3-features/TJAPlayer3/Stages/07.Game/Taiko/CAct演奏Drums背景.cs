@@ -85,8 +85,8 @@ namespace TJAPlayer3
             {
                 if (this.ct上背景スクロール用タイマー[i] != null)
                 {
-                    double TexSize = 1280 / TJAPlayer3.Tx.Background_Up[i].szテクスチャサイズ.Width;
-                    // 1280をテクスチャサイズで割ったものを切り上げて、プラス+1足す。
+                    double TexSize = 1920 / TJAPlayer3.Tx.Background_Up[i].szテクスチャサイズ.Width;
+                    // 1920をテクスチャサイズで割ったものを切り上げて、プラス+1足す。
                     int ForLoop = (int)Math.Ceiling(TexSize) + 1;
                     //int nループ幅 = 328;
                     TJAPlayer3.Tx.Background_Up[i].t2D描画(TJAPlayer3.app.Device, 0 - this.ct上背景スクロール用タイマー[i].n現在の値, TJAPlayer3.Skin.Background_Scroll_Y[i]);
@@ -102,8 +102,8 @@ namespace TJAPlayer3
                     else
                         TJAPlayer3.Tx.Background_Up_Clear[i].Opacity = 0;
 
-                    double TexSize = 1280 / TJAPlayer3.Tx.Background_Up_Clear[i].szテクスチャサイズ.Width;
-                    // 1280をテクスチャサイズで割ったものを切り上げて、プラス+1足す。
+                    double TexSize = 1920 / TJAPlayer3.Tx.Background_Up_Clear[i].szテクスチャサイズ.Width;
+                    // 1920をテクスチャサイズで割ったものを切り上げて、プラス+1足す。
                     int ForLoop = (int)Math.Ceiling(TexSize) + 1;
 
                     TJAPlayer3.Tx.Background_Up_Clear[i].t2D描画(TJAPlayer3.app.Device, 0 - this.ct上背景スクロール用タイマー[i].n現在の値, TJAPlayer3.Skin.Background_Scroll_Y[i]);
@@ -135,8 +135,8 @@ namespace TJAPlayer3
                         //int nループ幅 = 1257;
                         //CDTXMania.Tx.Background_Down_Scroll.t2D描画( CDTXMania.app.Device, 0 - this.ct下背景スクロール用タイマー1.n現在の値, 360 );
                         //CDTXMania.Tx.Background_Down_Scroll.t2D描画(CDTXMania.app.Device, (1 * nループ幅) - this.ct下背景スクロール用タイマー1.n現在の値, 360);
-                        double TexSize = 1280 / TJAPlayer3.Tx.Background_Down_Scroll.szテクスチャサイズ.Width;
-                        // 1280をテクスチャサイズで割ったものを切り上げて、プラス+1足す。
+                        double TexSize = 1920 / TJAPlayer3.Tx.Background_Down_Scroll.szテクスチャサイズ.Width;
+                        // 1920をテクスチャサイズで割ったものを切り上げて、プラス+1足す。
                         int ForLoop = (int)Math.Ceiling(TexSize) + 1;
 
                         //int nループ幅 = 328;

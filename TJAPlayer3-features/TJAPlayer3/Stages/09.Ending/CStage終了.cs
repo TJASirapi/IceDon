@@ -120,7 +120,7 @@ namespace TJAPlayer3
            //         if( this.tx文字 != null )
            //         {
            //             this.tx文字2.fZ軸中心回転 = -0.8f;
-           //             this.tx文字3.fZ軸中心回転 = ( -1.6f * ( this.ct時間稼ぎ.n現在の値 / 1280.0f ) ) >= -1.6f ? ( -1.6f * ( this.ct時間稼ぎ.n現在の値 / 1280.0f ) ) : -1.6f ;
+           //             this.tx文字3.fZ軸中心回転 = ( -1.6f * ( this.ct時間稼ぎ.n現在の値 / 1920.0f ) ) >= -1.6f ? ( -1.6f * ( this.ct時間稼ぎ.n現在の値 / 1920.0f ) ) : -1.6f ;
            //             this.tx文字2.vc拡大縮小倍率 = new Vector3( 4.0f, 4.0f, 1.0f );
            //             this.tx文字3.vc拡大縮小倍率 = new Vector3( 4.0f, 4.0f, 1.0f );
 

@@ -256,7 +256,7 @@ namespace TJAPlayer3
 			//#region [ 下部パネル ]
 			////---------------------
 			//if( this.tx下部パネル != null )
-			//	this.tx下部パネル.t2D描画( CDTXMania.app.Device, 0, 720 - this.tx下部パネル.szテクスチャサイズ.Height );
+			//	this.tx下部パネル.t2D描画( CDTXMania.app.Device, 0, 1080 - this.tx下部パネル.szテクスチャサイズ.Height );
 			////---------------------
 			//#endregion
 			#region [ オプションパネル ]

@@ -191,7 +191,7 @@ namespace TJAPlayer3
 				TJAPlayer3.act文字コンソール.tPrint(4, 4, C文字コンソール.Eフォント種別.白, $"IceDon v1.0.0 ({repositoryUrl};Fork of twopointzero/TJAPlayer3)");
 				TJAPlayer3.act文字コンソール.tPrint(4, 24, C文字コンソール.Eフォント種別.白, "Skin:" + TJAPlayer3.Skin.Skin_Name + " Ver." + TJAPlayer3.Skin.Skin_Version + " (" + TJAPlayer3.Skin.Skin_Creator + ")");
 				//CDTXMania.act文字コンソール.tPrint(4, 24, C文字コンソール.Eフォント種別.白, strSubTitle);
-				TJAPlayer3.act文字コンソール.tPrint(4, (720 - 24), C文字コンソール.Eフォント種別.白, $"IceDon is open source software under the MIT license. See README for acknowledgments.");
+				TJAPlayer3.act文字コンソール.tPrint(4, (1080 - 24), C文字コンソール.Eフォント種別.白, $"IceDon is open source software under the MIT license. See README for acknowledgments.");
 				#endregion
 
 
@@ -234,8 +234,8 @@ namespace TJAPlayer3
 				// クライアント領域内のカーソル座標を取得する。
 				// point.X、point.Yは負の値になることもある。
 				var point = TJAPlayer3.app.Window.PointToClient(System.Windows.Forms.Cursor.Position);
-				// クライアント領域の横幅を取得して、1280で割る。もちろんdouble型。
-				var scaling = 1.000 * TJAPlayer3.app.Window.ClientSize.Width / 1280;
+				// クライアント領域の横幅を取得して、1920で割る。もちろんdouble型。
+				var scaling = 1.000 * TJAPlayer3.app.Window.ClientSize.Width / 1920;
 				if (TJAPlayer3.Input管理.Mouse.bキーが押された((int)MouseObject.Button1))
 				{
 					if (point.X >= 180 * scaling && point.X <= 490 * scaling && point.Y >= 0 && point.Y <= 20 * scaling)

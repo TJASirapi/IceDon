@@ -52,7 +52,7 @@ namespace TJAPlayer3
                 if( TJAPlayer3.Tx.SongLoading_FadeOut != null )
 			    {
                     int y = this.counter.n現在の値 >= 840 ? 840 : this.counter.n現在の値;
-                    TJAPlayer3.Tx.SongLoading_FadeOut.t2D描画( TJAPlayer3.app.Device, 0, 720 - y );
+                    TJAPlayer3.Tx.SongLoading_FadeOut.t2D描画( TJAPlayer3.app.Device, 0, 1080 - y );
                 }
 
 			}

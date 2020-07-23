@@ -274,7 +274,7 @@ namespace TJAPlayer3
 			            if (genreBack != null)
 			            {
 			                var width = TJAPlayer3.Tx.SongSelect_Background.szテクスチャサイズ.Width;
-			                for (int i = 0; i < (1280 / width) + 2; i++)
+			                for (int i = 0; i < (1920 / width) + 2; i++)
 			                {
 			                    genreBack.t2D描画(TJAPlayer3.app.Device, -ct背景スクロール用タイマー.n現在の値 + width * i, 0);
 			                }
@@ -298,7 +298,7 @@ namespace TJAPlayer3
 
 				this.actInformation.On進行描画();
 				if( TJAPlayer3.Tx.SongSelect_Footer != null )
-                    TJAPlayer3.Tx.SongSelect_Footer.t2D描画( TJAPlayer3.app.Device, 0, 720 - TJAPlayer3.Tx.SongSelect_Footer.sz画像サイズ.Height );
+                    TJAPlayer3.Tx.SongSelect_Footer.t2D描画( TJAPlayer3.app.Device, 0, 1080 - TJAPlayer3.Tx.SongSelect_Footer.sz画像サイズ.Height );
 
                 #region ネームプレート
                 for (int i = 0; i < TJAPlayer3.ConfigIni.nPlayerCount; i++)

@@ -254,7 +254,7 @@ namespace TJAPlayer3
             //CDTXMania.act文字コンソール.tPrint( 0, 16, C文字コンソール.Eフォント種別.灰, C変換.nParsentTo255( ( this.ct曲名表示.n現在の値 / 30.0 ) ).ToString() );
 
 
-			int y = 720 - 45;
+			int y = 1080 - 45;
 			if( this.txタイトル != null )
 			{
                 int nサブタイトル補正 = string.IsNullOrEmpty(TJAPlayer3.stage選曲.r確定されたスコア.譜面情報.strサブタイトル) ? 15 : 0;
@@ -540,7 +540,7 @@ namespace TJAPlayer3
 				}
 				txFilename = new CTexture( TJAPlayer3.app.Device, bitmapFilename, TJAPlayer3.TextureFormat );
 				txFilename.vc拡大縮小倍率 = new Vector3( 0.5f, 0.5f, 1f );
-				txFilename.t2D描画( TJAPlayer3.app.Device, 0, 720 - 16 );
+				txFilename.t2D描画( TJAPlayer3.app.Device, 0, 1080 - 16 );
 			}
 		}
 

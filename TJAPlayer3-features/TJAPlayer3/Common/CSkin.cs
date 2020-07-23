@@ -2678,7 +2678,7 @@ namespace TJAPlayer3
         #endregion
         #region Effects
         public int[] Game_Effect_Roll_StartPoint_X = new int[] { 56, -10, 200, 345, 100, 451, 600, 260, -30, 534, 156, 363 };
-        public int[] Game_Effect_Roll_StartPoint_Y = new int[] { 720 };
+        public int[] Game_Effect_Roll_StartPoint_Y = new int[] { 1080 };
         public int[] Game_Effect_Roll_StartPoint_1P_X = new int[] { 56, -10, 200, 345, 100, 451, 600, 260, -30, 534, 156, 363 };
         public int[] Game_Effect_Roll_StartPoint_1P_Y = new int[] { 240 };
         public int[] Game_Effect_Roll_StartPoint_2P_X = new int[] { 56, -10, 200, 345, 100, 451, 600, 260, -30, 534, 156, 363 };
@@ -2694,7 +2694,7 @@ namespace TJAPlayer3
         public int Game_Effect_NotesFlash_Timer = 20;
         public int[] Game_Effect_GoGoSplash = new int[] { 300, 400, 30 };
         public int[] Game_Effect_GoGoSplash_X = new int[] { 120, 300, 520, 760, 980, 1160 };
-        public int[] Game_Effect_GoGoSplash_Y = new int[] { 740, 730, 720, 720, 730, 740 };
+        public int[] Game_Effect_GoGoSplash_Y = new int[] { 740, 730, 720, 1080, 730, 740 };
         public bool Game_Effect_GoGoSplash_Rotate = true;
         public int Game_Effect_GoGoSplash_Timer = 18;
         // super-flying-notes AioiLight

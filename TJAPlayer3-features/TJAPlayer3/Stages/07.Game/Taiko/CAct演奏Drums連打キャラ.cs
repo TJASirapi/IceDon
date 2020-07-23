@@ -39,7 +39,7 @@ namespace TJAPlayer3
             //                int nXseed = CDTXMania.Random.Next(12);
             //                this.st連打キャラ[ j ].fX開始点 = arXseed[ nXseed ];
             //                this.st連打キャラ[j].fX = arXseed[ nXseed ];
-            //                this.st連打キャラ[j].fY = 720;
+            //                this.st連打キャラ[j].fY = 1080;
             //                this.st連打キャラ[j].fX加速度 = 5/2;
             //                this.st連打キャラ[j].fY加速度 = 5/2;
             //                break;
@@ -191,12 +191,12 @@ namespace TJAPlayer3
                         }
                         TJAPlayer3.Tx.Effects_Roll[RollCharas[i].Type]?.t2D描画(TJAPlayer3.app.Device, RollCharas[i].X, RollCharas[i].Y);
                         // 画面外にいたら描画をやめさせる
-                        if(RollCharas[i].X < 0 - TJAPlayer3.Tx.Effects_Roll[RollCharas[i].Type].szテクスチャサイズ.Width || RollCharas[i].X > 1280)
+                        if(RollCharas[i].X < 0 - TJAPlayer3.Tx.Effects_Roll[RollCharas[i].Type].szテクスチャサイズ.Width || RollCharas[i].X > 1920)
                         {
                             RollCharas[i].Counter.t停止();
                             RollCharas[i].IsUsing = false;
                         }
-                        if (RollCharas[i].Y < 0 - TJAPlayer3.Tx.Effects_Roll[RollCharas[i].Type].szテクスチャサイズ.Height || RollCharas[i].Y > 720)
+                        if (RollCharas[i].Y < 0 - TJAPlayer3.Tx.Effects_Roll[RollCharas[i].Type].szテクスチャサイズ.Height || RollCharas[i].Y > 1080)
                         {
                             RollCharas[i].Counter.t停止();
                             RollCharas[i].IsUsing = false;

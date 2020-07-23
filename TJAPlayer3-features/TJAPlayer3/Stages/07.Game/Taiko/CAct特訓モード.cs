@@ -187,7 +187,7 @@ namespace TJAPlayer3
             {
                 this.ct背景スクロールタイマー.t進行Loop();
 
-                double TexSize = 1280 / TJAPlayer3.Tx.Tokkun_Background_Up.szテクスチャサイズ.Width;
+                double TexSize = 1920 / TJAPlayer3.Tx.Tokkun_Background_Up.szテクスチャサイズ.Width;
                 int ForLoop = (int)Math.Ceiling(TexSize) + 1;
                 TJAPlayer3.Tx.Tokkun_Background_Up.t2D描画(TJAPlayer3.app.Device, 0 - this.ct背景スクロールタイマー.n現在の値, TJAPlayer3.Skin.Background_Scroll_Y[0]);
                 for (int l = 1; l < ForLoop + 1; l++)
