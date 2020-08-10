@@ -1,0 +1,10 @@
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\FDK19\bin\x86\Debug\FDK.dll
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\FDK19\bin\x86\Debug\FDK.pdb
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\FDK19\bin\x86\Debug\Bass.Net.dll
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\FDK19\bin\x86\Debug\DirectShowLib-2005.dll
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\FDK19\bin\x86\Debug\SlimDX.dll
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\FDK19\obj\x86\Debug\FDK19.csprojAssemblyReference.cache
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\FDK19\obj\x86\Debug\FDK19.csproj.CoreCompileInputs.cache
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\FDK19\obj\x86\Debug\FDK19.csproj.CopyComplete
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\FDK19\obj\x86\Debug\FDK.dll
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\FDK19\obj\x86\Debug\FDK.pdb

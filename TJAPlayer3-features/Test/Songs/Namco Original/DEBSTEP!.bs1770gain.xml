@@ -1,0 +1,12 @@
+<bs1770gain>
+  <album>
+    <track total="1" number="1" file="DEBSTEP&#x21;&#x2E;ogg">
+      <integrated lufs="-12.19" lu="-10.81" />
+      <true-peak tpfs="0.34" factor="1.039326" />
+    </track>
+    <summary total="1">
+      <integrated lufs="-12.19" lu="-10.81" />
+      <true-peak tpfs="0.34" factor="1.039326" />
+    </summary>
+  </album>
+</bs1770gain>

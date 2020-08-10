@@ -1,0 +1,12 @@
+<bs1770gain>
+  <album>
+    <track total="1" number="1" file="OK&#x20;I&#x2019;m&#x20;blue&#x20;rat&#x2E;ogg">
+      <integrated lufs="-12.41" lu="-10.59" />
+      <true-peak tpfs="0.31" factor="1.036785" />
+    </track>
+    <summary total="1">
+      <integrated lufs="-12.41" lu="-10.59" />
+      <true-peak tpfs="0.31" factor="1.036785" />
+    </summary>
+  </album>
+</bs1770gain>

@@ -1,0 +1,12 @@
+<bs1770gain>
+  <album>
+    <track total="1" number="1" file="Coquette&#x2E;ogg">
+      <integrated lufs="-11.12" lu="-11.88" />
+      <true-peak tpfs="1.73" factor="1.219769" />
+    </track>
+    <summary total="1">
+      <integrated lufs="-11.12" lu="-11.88" />
+      <true-peak tpfs="1.73" factor="1.219769" />
+    </summary>
+  </album>
+</bs1770gain>

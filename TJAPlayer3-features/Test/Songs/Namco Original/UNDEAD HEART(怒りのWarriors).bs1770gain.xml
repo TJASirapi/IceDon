@@ -1,0 +1,12 @@
+<bs1770gain>
+  <album>
+    <track total="1" number="1" file="UNDEAD&#x20;HEART&#x28;&#x6012;&#x308A;&#x306E;Warriors&#x29;&#x2E;ogg">
+      <integrated lufs="-9.68" lu="-13.32" />
+      <true-peak tpfs="1.06" factor="1.129457" />
+    </track>
+    <summary total="1">
+      <integrated lufs="-9.68" lu="-13.32" />
+      <true-peak tpfs="1.06" factor="1.129457" />
+    </summary>
+  </album>
+</bs1770gain>

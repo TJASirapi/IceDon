@@ -1,0 +1,12 @@
+<bs1770gain>
+  <album>
+    <track total="1" number="1" file="Taiko&#x20;Warrior&#x2E;ogg">
+      <integrated lufs="-7.41" lu="-15.59" />
+      <true-peak tpfs="1.53" factor="1.192872" />
+    </track>
+    <summary total="1">
+      <integrated lufs="-7.41" lu="-15.59" />
+      <true-peak tpfs="1.53" factor="1.192872" />
+    </summary>
+  </album>
+</bs1770gain>

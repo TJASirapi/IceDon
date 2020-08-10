@@ -1,0 +1,12 @@
+<bs1770gain>
+  <album>
+    <track total="1" number="1" file="Purple&#x20;Rose&#x20;Fusion&#x2E;ogg">
+      <integrated lufs="-11.92" lu="-11.08" />
+      <true-peak tpfs="0.39" factor="1.046293" />
+    </track>
+    <summary total="1">
+      <integrated lufs="-11.92" lu="-11.08" />
+      <true-peak tpfs="0.39" factor="1.046293" />
+    </summary>
+  </album>
+</bs1770gain>

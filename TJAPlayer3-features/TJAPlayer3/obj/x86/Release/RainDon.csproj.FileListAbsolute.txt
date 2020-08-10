@@ -1,0 +1,9 @@
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\TJAPlayer3\obj\x86\Release\RainDon.csprojAssemblyReference.cache
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\TJAPlayer3\obj\x86\Release\RainDon.Properties.Discord.resources
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\TJAPlayer3\obj\x86\Release\RainDon.Properties.Resources.resources
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\TJAPlayer3\obj\x86\Release\RainDon.csproj.GenerateResource.cache
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\TJAPlayer3\obj\x86\Release\RainDon.csproj.CoreCompileInputs.cache
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\TJAPlayer3\obj\x86\Release\RainDon.TrustInfo.xml
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\TJAPlayer3\obj\x86\Release\RainDon.exe.manifest
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\TJAPlayer3\obj\x86\Release\RainDon.exe
+C:\Users\owner\Documents\GitHub\RainDon\TJAPlayer3-features\TJAPlayer3\obj\x86\Release\RainDon.pdb

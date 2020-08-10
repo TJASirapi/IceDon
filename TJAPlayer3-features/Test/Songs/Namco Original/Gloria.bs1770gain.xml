@@ -1,0 +1,12 @@
+<bs1770gain>
+  <album>
+    <track total="1" number="1" file="Gloria&#x2E;ogg">
+      <integrated lufs="-6.39" lu="-16.61" />
+      <true-peak tpfs="1.69" factor="1.214781" />
+    </track>
+    <summary total="1">
+      <integrated lufs="-6.39" lu="-16.61" />
+      <true-peak tpfs="1.69" factor="1.214781" />
+    </summary>
+  </album>
+</bs1770gain>
